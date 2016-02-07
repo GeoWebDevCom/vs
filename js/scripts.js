@@ -16,6 +16,10 @@ $(window).load(function() {
 
 $(document).ready(function() {
 	
+	$("body").on("click","[disabled]",function() {
+		return false;
+	})
+	
 	$(".up-link").on("click",function() {
 		$("html,body").animate({
 			scrollTop: 0
@@ -76,6 +80,9 @@ $(document).ready(function() {
 	
 	$(".tabs-element select").on("change",function() {
 		$(this).parents(".tabs-element").find(".nav-tabs li").eq($(this).find("option:selected").prevAll().length).find("a").click();
+		if ($(this).parents(".tabs-element").find(".nav-tabs li").eq($(this).find("option:selected").prevAll().length).find("a").data("role") != "tab") {
+			location.href = $(this).parents(".tabs-element").find(".nav-tabs li").eq($(this).find("option:selected").prevAll().length).find("a").attr("href")
+		}
 	});
 	
 	$(".tabs-element .nav-tabs li a").on("click",function() {
