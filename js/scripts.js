@@ -95,6 +95,11 @@ $(document).ready(function() {
 });
 
 function resizeEventsBanners() {
+	if ($(".events-list-filter").length) {
+		$(".events-filter-form").css({
+			minHeight: $(".events-list-filter + .events-list-item").height()
+		})
+	}
   if ($(".events-list-banners").length) {
 		$(".events-list-banners").each(function() {
 			var bannersCont = $(this);
