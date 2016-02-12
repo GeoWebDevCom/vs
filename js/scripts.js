@@ -16,6 +16,10 @@ $(window).load(function() {
 
 $(document).ready(function() {
 	
+	$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+		resizeEventsBanners();
+	});
+	
 	$("body").on("click","[disabled]",function() {
 		return false;
 	})
@@ -42,12 +46,18 @@ $(document).ready(function() {
 	$(".navbar-nav>li").on("mouseover",function() {
 		if ($(this).find(".dropdown-toggle").length) {
 			$(this).addClass("open");
+			if ($(window).width() < 992) {
+				$(this).find(".dropdown-menu").stop().hide().slideDown(300)
+			}
 			$(this).find(".dropdown-toggle").data("aria-expanded",true)
 		}
 	});
 	$(".navbar-nav>li").on("mouseout",function() {
 		if ($(this).find(".dropdown-toggle").length) {
 			$(this).removeClass("open");
+			if ($(window).width() < 992) {
+				$(this).find(".dropdown-menu").stop().slideUp(300)
+			}
 			$(this).find(".dropdown-toggle").data("aria-expanded",false)
 		}
 	});
