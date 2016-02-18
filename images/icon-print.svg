@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: sketchtool 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>icon - print</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="elements" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="elements---iconset" sketch:type="MSArtboardGroup" transform="translate(-824.000000, -264.000000)" fill="#1E6DA2">
+            <g id="Group-20" sketch:type="MSLayerGroup" transform="translate(824.000000, 264.000000)">
+                <g id="icon---print" transform="translate(3.000000, 3.000000)" sketch:type="MSShapeGroup">
+                    <g id="printer63">
+                        <g id="Capa_1">
+                            <path d="M32.8888889,0 L7.11111111,0 L7.11111111,16.8888889 L32.8888889,16.8888889 L32.8888889,0 L32.8888889,0 Z M30.3111111,14.4761905 L9.68888889,14.4761905 L9.68888889,2.41269841 L30.3111111,2.41269841 L30.3111111,14.4761905 L30.3111111,14.4761905 Z" id="Shape"></path>
+                            <path d="M35,16.8888889 L35,19.4567901 L5,19.4567901 L5,16.8888889 C2.23875,16.8888889 0,19.1884444 0,22.0246914 L0,37.4320988 C0,38.8515062 1.11820312,40 2.5,40 L37.5,40 C38.881875,40 40,38.8515062 40,37.4320988 L40,22.0246914 C40,19.1884444 37.76125,16.8888889 35,16.8888889 L35,16.8888889 Z M32.5,34.8641975 C32.5,36.2836049 31.381875,37.4320988 30,37.4320988 L10,37.4320988 C8.618125,37.4320988 7.5,36.2836049 7.5,34.8641975 L7.5,32.2962963 L32.5,32.2962963 L32.5,34.8641975 L32.5,34.8641975 Z M36.25,27.1604938 L33.75,27.1604938 C33.0590625,27.1604938 32.5,26.5862469 32.5,25.8765432 C32.5,25.1668395 33.0590625,24.5925926 33.75,24.5925926 L36.25,24.5925926 C36.9409375,24.5925926 37.5,25.1668395 37.5,25.8765432 C37.5,26.5862469 36.9409375,27.1604938 36.25,27.1604938 L36.25,27.1604938 Z" id="Shape"></path>
+                            <rect id="Rectangle-path" x="12.4444444" y="4.44444444" width="15.1111111" height="2.66666667"></rect>
+                            <rect id="Rectangle-path" x="12.4444444" y="9.77777778" width="15.1111111" height="2.66666667"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

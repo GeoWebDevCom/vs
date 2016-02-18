@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="29px" viewBox="0 0 16 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: sketchtool 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>slider-right</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="elements" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="elements---iconset" sketch:type="MSArtboardGroup" transform="translate(-448.000000, -123.000000)" fill="#1E6DA2">
+            <g id="Group-16" sketch:type="MSLayerGroup" transform="translate(448.000000, 123.000000)">
+                <path d="M5.43810049,14.7475446 L15.2754592,24.5849033 C16.2531668,25.5626109 16.2611058,27.1398491 15.2779884,28.1229665 C14.3016777,29.0992772 12.7172919,29.0978038 11.7399253,28.1204372 L0.724540826,17.1050528 C0.084115907,16.4646279 -0.140219689,15.5669681 0.0575169126,14.7475446 C-0.140219689,13.9281212 0.084115907,13.0304614 0.724540826,12.3900365 L11.7399253,1.37465206 C12.7172919,0.397285445 14.3016777,0.395812096 15.2779884,1.37212283 C16.2611058,2.35524021 16.2531668,3.93247838 15.2754592,4.91018596 L5.43810049,14.7475446 Z" id="slider-right" sketch:type="MSShapeGroup" transform="translate(8.000000, 14.747545) scale(-1, 1) translate(-8.000000, -14.747545) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

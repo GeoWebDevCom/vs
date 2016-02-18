@@ -1,5 +1,7 @@
 $(window).resize(function() {
   
+	makeup();
+	
 	resizeEventsBanners();
 	
 	if ($(window).width() > 991) {
@@ -11,10 +13,42 @@ $(window).resize(function() {
 $(window).load(function() {
 	
 	resizeEventsBanners();
+	
+	makeup();
   
 });
 
 $(document).ready(function() {
+	
+	// Карта тура
+	
+	$(".tour-map-trigger").on("click",function() {
+		$(".tour-map-wrapper").toggleClass("open");
+	});
+	
+	$(".btn-2[data-toggle='collapse']").on("click",function() {
+		$(this).hide();
+	})
+	
+	// Слайдер тура
+	
+	$(".tour-slider").slick({
+		dots: false,
+		infinite: false,
+		speed:500,
+		slidesToShow: 2,
+		slidesToScroll:2,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					adaptiveHeight: true
+				}
+			}
+		]
+	})
 	
 	$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
 		resizeEventsBanners();
@@ -173,4 +207,26 @@ function handleForms() {
 		}
 	})
 	
+}
+
+function makeup() {
+	
+	if ($(".tour-item-content").length) {
+		if ($(".news-item-content").width() == $(".news-item-content").parents(".container-full").width()) {
+			delta = 0
+		} else {
+			delta = 64
+		}
+		$(".tour-item-content .news-item-ttl").css({
+			width: $(".container-full").outerWidth() - 92 - delta
+		})
+	}
+	
+	//$(".news-item-data").offset().top + $(".news-item-data").height() = $(".page-r-col").offset().top + $(".page-r-col").height();
+	
+  if ($(".news-item-data").length) {
+		$(".page-r-col").css({
+			minHeight: $(".news-item-data").outerHeight(true) + $(".news-item-data").offset().top - $(".page-r-col").offset().top
+		})
+	}
 }
