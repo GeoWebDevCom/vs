@@ -1791,7 +1791,7 @@ ul.services-list li:before {
 	width:100%;
 	height:100%;
 	background:rgba(49,131,186,1);
-	mix-blend-mode:difference;
+	mix-blend-mode:multiply;
 	position:absolute;
 	left:0;
 	top:0;
@@ -1806,8 +1806,8 @@ ul.services-list li:before {
   content:"";
 	width:100%;
 	height:100%;
-	background:rgba(49,131,186,1);
-	mix-blend-mode:color;
+	/* background:rgba(49,131,186,1);
+	mix-blend-mode:color; */
 	position:absolute;
 	left:0;
 	top:0;
@@ -1969,19 +1969,18 @@ ul.news-data-programs a {
 }
 
 .spec-tag {
-	font-family:"marta",serif;
-	height: 40px;
+	font-family: "marta",serif;
   border-radius: 4px;
   font-size: 17px;
-  line-height: 38px;
+  line-height: 24px;
   font-weight: bold;
   color: #1f466f;
   background: #f7d66d;
   border-top: 2px solid #f7d66d;
   border-bottom: 2px solid #f7d66d;
-  padding: 0 11px;
-	display:inline-block;
-	margin:0 16px 16px 0;
+  padding: 8px 11px;
+  display: inline-block;
+  margin: 0 16px 16px 0;
 }
 
 .team-item-programs {
@@ -2135,9 +2134,6 @@ ul.news-data-programs a {
 	padding-top:0;
 	transition:all .5s linear;
 	overflow:hidden;
-}
-
-.tour-slider .slick-slide.slick-active {
   padding-top:80px;
 }
 
@@ -2145,6 +2141,11 @@ ul.news-data-programs a {
   padding-top:0;
 }
 
+.tour-slider .slick-slide.slick-current:last-child {
+  padding-top:0;
+}
+
+.tour-slider .slick-slide.slick-current:last-child img,
 .tour-slider .slick-slide.slick-active+.slick-slide.slick-active img {
   right:100%;
 	transform: translate(100%,0);
@@ -2193,6 +2194,7 @@ ul.news-data-programs a {
 .tour-slider .slick-disabled {
 	opacity:.5 !important;
 	cursor:default;
+	pointer-events:none;
 }
 
 .tour-map-wrapper {
@@ -3034,6 +3036,7 @@ h2+.calendar-table {
 		position: relative;
 		text-align: center;
 		padding-bottom: 8px;
+		padding-right:32px;
 	}
 	
 	.news-item-date {
@@ -3447,5 +3450,36 @@ h2+.calendar-table {
 @media (min-width:992px) {
   .tour-slider-wrapper .container-full {
 		max-width:100%;
+	}
+}
+
+@media (max-width:1030px) and (min-width:992px) {
+  .events-list .data:before {
+		background:rgba(49,131,186,.8);
+		mix-blend-mode:initial;
+	}
+
+	.events-list .data-inner:before {
+		display:none;
+	}
+
+	.main-slider .slide-descr-inner:before {
+		background:rgba(49,131,186,.8);
+		mix-blend-mode:initial;
+	}
+
+	.main-slider .slide-descr-inner-cont:before {
+		background:none;
+		mix-blend-mode:initial;
+	}
+
+	.news-item-ttl:before {
+		background:rgba(49,131,186,.8);
+		mix-blend-mode:initial;
+	}
+
+	.news-item-ttl-inner:before {
+		background:none;
+		mix-blend-mode:initial;
 	}
 }
