@@ -20,6 +20,15 @@ $(window).load(function() {
 
 $(document).ready(function() {
 	
+	$(".fancybox").click( function( e ) {
+    if ( window.innerWidth < 991 ) {
+        e.stopPropagation();
+        e.preventDefault();
+    }
+	})
+	
+	$(".fancybox").fancybox();
+	
 	// Карта тура
 	
 	$(".tour-map-trigger").on("click",function() {

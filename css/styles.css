@@ -2672,6 +2672,14 @@ h2+.calendar-table {
 		height:326px;
 	}
 	
+	.events-list-filter .events-filter-form {
+		padding-top:30px;
+	}
+	
+	.filter-form .form-group {
+		margin: 0 0 15px 0;
+	}
+	
 }
 
 @media (max-width:1180px) {
@@ -3198,6 +3206,10 @@ h2+.calendar-table {
 		margin:0 12px !important;
 	}
 	
+	.filter-form .form-group {
+		margin: 0 0 25px 0;
+	}
+	
 }
 
 @media (max-width:767px) {
@@ -3481,5 +3493,18 @@ h2+.calendar-table {
 	.news-item-ttl-inner:before {
 		background:none;
 		mix-blend-mode:initial;
+	}
+	
+}
+
+@media (max-width:1030px) {
+  .page-header-cont .col-md-7 {
+		clear:both;
+		float:none;
+		width:100%;
+	}
+	
+	.page-tabs {
+		float:left;
 	}
 }
