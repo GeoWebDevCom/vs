@@ -6,7 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		<title>Ветер свободы - Услуги</title>
+		<title>Ветер свободы - Контакты</title>
 
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/slick.css" rel="stylesheet">
@@ -114,11 +114,13 @@
 						<div class="page-header-inner">
 							<div class="page-header-cont">
 								<ul class="breadcrumb">
-									<li class="active">Наш клуб</li>
+									<li><a href="#">Главная</a></li>
+									<li><a href="#">Наш клуб</a></li>
+									<li class="active">Контакты</li>
 								</ul>
 								<div class="row">
 									<div class="col-xs-12">
-										<h1>Услуги</h1>
+										<h1>Контакты</h1>
 									</div>
 								</div>
 							</div>
@@ -133,92 +135,98 @@
 				<div class="page-content">
 					<div class="container-full">
 						<div class="row">
-							<div class="col-xs-12 col-sm-6 col-md-3">
-								<div class="services-ttl">
-									<a href="#">Туры</a>
+							<div class="col-xs-12">
+								
+								<!-- Контактная информация -->
+								
+								<div class="row">
+									<div class="col-xs-12 col-sm-6 col-md-3">
+										<div class="contacts-info-ttl">
+											Адрес
+										</div>
+										<div class="contacts-info-val">
+											г.Москва, ул. Пятницкая д.13, стр.2 (м. Новокузнецкая)
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-md-3">
+										<div class="contacts-info-ttl">
+											Время работы
+										</div>
+										<div class="contacts-info-val">
+											Понедельник - пятница, с 11 до 19.
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-md-3">
+										<div class="contacts-info-ttl">
+											Телефоны
+										</div>
+										<div class="contacts-info-val">
+											+7 (495) 644-25-00
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-md-3">
+										<div class="contacts-info-ttl">
+											E-mail
+										</div>
+										<div class="contacts-info-val">
+											<a href="mailto:info@veter-s.ru">info@veter-s.ru</a>
+										</div>
+									</div>
 								</div>
-								<ul class="services-list">
-									<li><a href="#">Коста-рика</a></li>
-									<li><a href="#">Аргентина</a></li>
-									<li><a href="#">Непал</a></li>
-									<li><a href="#">Юдная Америка</a></li>
-									<li><a href="#">Коста-Рика</a></li>
-									<li><a href="#">Руанда</a></li>
-									<li><a href="#">Килиманджаро</a></li>
-									<li><a href="#">Новая Гвинея</a></li>
-									<li><a href="#">Латинская Америка</a></li>
-									<li><a href="#">Гавайи</a></li>
-									<li><a href="#">Марокко</a></li>
-									<li><a href="#">Чили</a></li>
-									<li><a href="#">Индия</a></li>
-									<li><a href="#">Китай</a></li>
-									<li><a href="#">Новая Зеландия</a></li>
-									<li><a href="#">Сейшелы</a></li>
-									<li><a href="#">Африка</a></li>
-									<li><a href="#">Танзания</a></li>
-									<li><a href="#">Лаос</a></li>
-									<li><a href="#">Антарктида</a></li>
-									<li><a href="#">Танзания</a></li>
-									<li><a href="#">Северный полюс</a></li>
-									<li><a href="#">Гватемала</a></li>
-								</ul>
-							</div>
-							<div class="col-xs-12 col-sm-6 col-md-3">
-								<div class="services-ttl">
-									<a href="#">Туры по России</a>
+								
+								<!-- Контактная информация END -->
+								
+								<!-- Карта -->
+								
+								<div class="contacts-map" id="contactsMap">
+									
 								</div>
-								<ul class="services-list">
-									<li><a href="#">Туры на Дальний Восток</a></li>
-									<li><a href="#">Туы по Байкалу</a></li>
-									<li><a href="#">Горнолыжные туры в Сочи</a></li>
-									<li><a href="#">Туры по Санкт-Петербургу</a></li>
-									<li><a href="#">Туры по Москве</a></li>
-									<li><a href="#">Туры выходного дня в Москве</a></li>
-									<li><a href="#">Туры выходного дня по Санкт-Петербургу</a></li>
-								</ul>
-								<div class="services-ttl">
-									<a href="#">Горячие туры</a>
+								
+								<!-- Скрипт карты -->
+
+								<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js"></script>
+
+								<script type="text/javascript">
+									
+									function initMap() {
+										var map = new google.maps.Map(document.getElementById('contactsMap'), {
+											zoom: 17,
+											center: {lat: 55.743791, lng: 37.628603},
+											scrollwheel: false,
+											navigationControl: false,
+											mapTypeControl: false
+										});
+
+										var officeMarker = new google.maps.Marker({
+											position: {lat: 55.743791, lng: 37.628603},
+											map: map
+										});
+
+										var getCen = map.getCenter();
+										
+										google.maps.event.addDomListener(window, 'resize', function() {
+											map.setCenter(getCen);
+										});
+										
+									}
+									
+									google.maps.event.addDomListener(window, 'load', initMap);
+									
+								</script>
+
+								<!-- Скрипт карты END -->
+								
+								<!-- Карта END -->
+								
+								<div class="center">
+									<div class="contacts-info-ttl">
+										Старая версия сайта
+									</div>
+									<div class="contacts-info-val">
+										<a href="#">old.veter-s.ru</a>
+									</div>
 								</div>
-								<ul class="services-list">
-									<li><a href="#">Горячие туры в марте</a></li>
-									<li><a href="#">Горячие туры в январе</a></li>
-									<li><a href="#">Горячие туры в ноябре</a></li>
-									<li><a href="#">Горячие туры в сентябре</a></li>
-									<li><a href="#">Горячие туры в октябре</a></li>
-									<li><a href="#">Горячие туры в декабре</a></li>
-									<li><a href="#">Горячие туры в феврале</a></li>
-									<li><a href="#">Горячие туры в апреле</a></li>
-								</ul>
-							</div>
-							<div class="col-xs-12 col-sm-6 col-md-3">
-								<div class="services-ttl">
-									<a href="#">Цены на туры</a>
-								</div>
-								<ul class="services-list">
-									<li><a href="#">Цены на путешествие в Австралию</a></li>
-									<li><a href="#">Цены на туры в Новую Зеландию</a></li>
-									<li><a href="#">Цены на туры в Америку</a></li>
-									<li><a href="#">Цены на туры в Чили</a></li>
-									<li><a href="#">Цены на отдых на Гавайях</a></li>
-									<li><a href="#">Цены на Косту Рику</a></li>
-								</ul>
-							</div>
-							<div class="col-xs-12 col-sm-6 col-md-3">
-								<div class="services-ttl">
-									<a href="#">Виды туров</a>
-								</div>
-								<ul class="services-list">
-									<li><a href="#">Эксклюзивные туры</a></li>
-									<li><a href="#">Экспедициы в Тибет</a></li>
-									<li><a href="#">Активные экстремальные туры</a></li>
-									<li><a href="#">Комбинированные туры Вьетнам Камбоджа</a></li>
-									<li><a href="#">Экстремальный туризм в России</a></li>
-									<li><a href="#">Отдых на майские праздники</a></li>
-									<li><a href="#">Туры Бразилия Аргентина</a></li>
-									<li><a href="#">Авторские экскурсионные туры</a></li>
-									<li><a href="#">Уникальные путешествия</a></li>
-									<li><a href="#">Камбоджа Тайланд</a></li>
-								</ul>
+								
 							</div>
 						</div>
 					</div>

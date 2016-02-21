@@ -1,0 +1,154 @@
+html,body {
+  width:1024px !important;
+}
+
+.navbar-collapse.collapse,
+.page-header,
+.tour-item-print,
+.navbar-collapse.collapse,
+.navbar-collapse.collapse,
+.navbar-collapse.collapse,
+.navbar-collapse.collapse {
+  display:none !important;
+}
+
+header {
+  display:block !important;
+}
+
+.navbar {
+  display:block;
+}
+
+.navbar-header {
+  float:none !important;
+}
+
+.navbar-brand {
+  padding: 0 0 30px 0;
+  display: block;
+}
+
+.tour-item-content .news-item-ttl-data {
+  margin-top: 0 !important;
+}
+
+.news-item-pic-ttl .col-md-push-3 {
+  left:0;
+}
+
+* {
+  color:#1f466f !important;
+}
+
+.news-item-ttl {
+}
+
+.tour-item-content .news-item-ttl h1 {
+	font-size:50px;
+	line-height:60px;
+	padding:0 0 0 32px;
+	display:block;
+	height:auto;
+}
+
+.news-item-pic {
+  display:none;
+}
+
+.tour-slider {
+  display:none;
+}
+
+[data-toggle=collapse] {
+  display:none;
+}
+
+.collapse {
+  display:block;
+}
+
+.page-content {
+  font-size:13px;
+	line-height:22px;
+}
+
+.tour-tag,
+.tour-data>.row>div {
+  float:left !important;
+	width:33.3% !important;
+}
+
+.tour-tags:after {
+  content:" ";
+	display:table;
+	clear:both;
+}
+
+.tour-team-item {
+  float:left !important;
+	width:25% !important;
+	margin:0 30px 30px 0 !important;
+}
+
+.btn {
+  display:none !important;
+}
+
+.page-content ul li:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #3183ba !important;
+  position: absolute;
+  left: 0;
+  top: 5px;
+	display:block !important;
+}
+
+.tour-item-dates-header {
+  background:#e9f0f4 !important;
+}
+
+footer {
+  display:none;
+}
+
+.tour-related {
+  display:none;
+}
+
+.news-item-socbuttons-wrapper,
+.tour-slider-wrapper,
+.tour-map-wrapper {
+  display:none;
+}
+
+.news-item-data>.row>div {
+  width:100% !important;
+}
+
+.news-item-data .col-sm-4,
+.news-item-data .col-xs-12 {
+  width:100% !important;
+}
+
+.navbar-phone,
+.navbar-phone-2 {
+  display:none !important;
+}
+
+.page-r-col {
+  width:100% !important;
+	margin:0 !important;
+}
+
+.news-item-data {
+  position:relative !important;
+}
+
+.news-item-pic-ttl .col-md-pull-9 {
+  width:100% !important;
+	right:0 !important;
+}
