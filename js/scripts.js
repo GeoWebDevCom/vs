@@ -20,6 +20,12 @@ $(window).load(function() {
 
 $(document).ready(function() {
 	
+	// Кнопка печати тура
+	
+	$(".tour-item-print").on("click",function() {
+		window.print();
+	});
+	
 	$(".fancybox").click( function( e ) {
     if ( window.innerWidth < 991 ) {
         e.stopPropagation();
