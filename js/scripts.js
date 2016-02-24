@@ -87,7 +87,10 @@ $(document).ready(function() {
 		infinite:false,
 		arrows:false,
 		dots:true,
-		fade:true
+		fade:true,
+		autoplay: true,
+		autoplaySpeed: 15000,
+		pauseOnHover:false
 	})
 	
 	// Главное меню
