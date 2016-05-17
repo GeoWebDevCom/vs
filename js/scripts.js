@@ -101,6 +101,11 @@ $(document).ready(function() {
 	// Главное меню
 	
 	if (!isMobile) {
+		
+		$(".navbar-nav>li>a").on("click",function() {
+			location.href = $(this).attr("href")
+		})
+		
 		$(".navbar-nav>li").on("mouseover",function() {
 			if ($(this).find(".dropdown-toggle").length) {
 				$(this).addClass("open");
