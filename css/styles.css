@@ -3541,6 +3541,7 @@ and(-webkit-min-device-pixel-ratio:0) { @media
 		padding:0 16px;
 	}
 	
+	.navbar-phone,
 	.navbar-phone-2 {
 		display:none;
 	}
