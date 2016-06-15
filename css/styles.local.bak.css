@@ -1274,7 +1274,7 @@ ul.nav-tabs>li:before {
 .events-list-item .tags a:hover {
   color:#8eaabd;
 	position:relative;
-	padding:0 15px 0 0;
+	/* padding:0 15px 0 0; */
 }
 
 .events-list-item .tags a:before {
